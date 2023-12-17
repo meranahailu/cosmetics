@@ -1,0 +1,203 @@
+/* reset*/
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+html,body{
+    scroll-behavior: smooth;
+    /*scroll smoothlly*/
+    height: 100%;
+}
+img,i,a{
+    display: block;
+    max-width: 100%;
+}
+ul li{
+list-style: none;
+ /* list style used for remove dot in listed nav */
+}
+ul li a{
+    text-decoration: none;
+}
+/* reset*/
+.container{
+    width: 80%;
+    margin-inline:auto; /* it used to center the content*/
+}
+.even-colum{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.625rem 0;
+
+}
+.logo{
+    width: 8rem;
+}
+.primary-nav ul{
+    display: flex;/* it used to list horizontal*/
+    justify-content: space-between;/* it make space b/n li*/
+
+}
+.primary-nav ul li{
+    padding-top: 0.75rem;
+}
+.primary-nav ul li a{
+    color:#3f1a09;
+    text-transform: uppercase;
+    font-weight:bold ;
+}
+.primary-nav ul li::after{
+    content:"" ;
+    width: 0;
+    height:2px ;
+    display: block;
+    background: #a85219;
+    transition: 0.5s;
+}
+.primary-nav ul li:hover::after{
+    width: 100%;
+}
+/* show case */
+.showcase{
+   background: linear-gradient(232deg,#c98E6f 25%,#A85219 75%);
+   color: white; 
+}
+.showcase h1{
+   font-size:3.5rem ;
+}
+.showcase img{
+    padding-left: 4rem;
+}
+p{
+    font-weight: lighter;
+    padding: 1.6rem 0;/* spacee b/n p and h1*/
+    line-height:1.5 ;/* space b/n word*/
+
+}
+button{
+    padding: 14px 40px;/*top tobottom and right to left*/
+    background: #3f1a09;
+    color: white;
+    border:none ;
+    border-radius: 30px;
+    font-size:0.875rem ; 
+}
+button:hover{
+    background:#f3dd94 ;
+    color:#3f1a09 ;
+    cursor: pointer;/* it change the cursuor*/
+
+}
+/* our product */
+.title{
+   text-align: center; 
+}
+.title h1{
+    color: #3f1a09;
+    font-size:3.4rem ;
+}
+.img-wapper{
+ width: 28.125rem;   
+ height:28.125rem;
+ border-radius:0 40% 30% 40% ;
+ overflow: hidden;/*to show the above border */ 
+}
+.img-wapper img{
+   width: 100%;
+   height: 100%; 
+   object-fit: cover;
+   transition:0.4s ease-in-out;
+}
+.img-wapper img:hover{
+   transform: scale(1.1); 
+}
+.middle-product{
+    background-color: #f3dd94;
+}
+.space{
+    padding:1rem 0 ;
+
+}
+/* about us */
+.aboutus{
+    background: linear-gradient(73deg, #C98E6F 25%,#A85219 75%);
+    color:white ;
+    --mask:
+    radial-gradient(60.47px at 50% 82.50px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
+    radial-gradient(60.47px at 50% -52.5px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
+    radial-gradient(60.47px at 50% calc(100% - 82.50px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
+    radial-gradient(60.47px at 50% calc(100% + 52.50px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+.aboutus img{
+    padding:2rem;
+}
+/* contact us */
+form{
+    background: #f3dd94;
+    border-radius:30px ;
+    padding: 2rem;
+    margin:2rem;
+}
+label{
+    font-weight: 400;
+    color: #3f1a09;
+}
+.inputs{
+   width: 25rem; 
+   height: 2.5rem;
+   border:1px solid #3f1a09;
+   border-radius:14px;
+   padding-left:1rem;
+   margin-bottom: 1rem;
+}
+.textarea-field{
+    height:9rem;
+    padding-top:0.625rem;
+}
+.contacts{
+    background: linear-gradient(232deg,#c98E6f 25%,#A85219 75%); 
+    border-radius: 30px;
+    padding: 2rem;
+    display: grid;/* it used to center the contacts*/
+    place-content: center;
+    width: 25rem;
+}
+i{
+    color: white;
+}
+span{
+   padding-left: 1rem; 
+}
+/* footer */
+footer{
+    background: #3f1a09;
+    padding: 2rem;
+}
+/* the bottem css used to 4 colum */
+.four-colum{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;/* all footer 4 colum center*/
+    align-items: center;/* all footer 4 colum center*/
+}
+i{
+   padding-top: 1rem; 
+   padding-left: 1rem;/* space b/n contact us and arrow*/
+}
+ul li a{
+    color: white;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+h3{
+    color: white;
+    display: inline;/*it use contact $ arrow in one line*/
+
+}
